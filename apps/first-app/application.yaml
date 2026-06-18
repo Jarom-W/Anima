@@ -9,11 +9,13 @@ spec:
   source:
     repoURL: https://github.com/Jarom-W/Anima.git
     targetRevision: HEAD
-    path: apps/first-app
+    path: apps/first-app/base
 
   destination:
     server: https://kubernetes.default.svc
     namespace: default
 
   syncPolicy:
-    automated: {}
+    automated:
+      prune: true
+      selfHeal: true
