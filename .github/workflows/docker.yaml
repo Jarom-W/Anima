@@ -37,6 +37,6 @@ jobs:
       - name: Build and Push
         uses: docker/build-push-action@v5
         with:
-          context: ./apps/second-app/Dockerfile
+          context: ./apps/second-app/
           push: true
           tags: ghcr.io/jarom-w/anima-second-app:${{ steps.vars.outputs.sha }}
