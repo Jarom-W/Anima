@@ -10,6 +10,9 @@ spec:
     repoURL: https://github.com/Jarom-W/Anima.git
     targetRevision: main
     path: charts/second-app
+    helm:
+      valueFiles:
+        - ../../gitops/environments/dev/second-app.yaml
 
   destination:
     server: https://kubernetes.default.svc
