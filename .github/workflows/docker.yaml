@@ -41,9 +41,4 @@ jobs:
           push: true
           tags: ghcr.io/jarom-w/anima-second-app:${{ steps.vars.outputs.sha }}
 
-      - name: Promote to dev via PR
-        env: 
-          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-          SHA: ${{ steps.vars.outputs.sha }}
-        run: python scripts/promote_dev.py
 
