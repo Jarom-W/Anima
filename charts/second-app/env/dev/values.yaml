@@ -1,5 +1,5 @@
 image:
   repository: ghcr.io/jarom-w/anima-second-app
-  tag: 9a615eb
+  tag: c7619df
 
 replicaCount: 1
